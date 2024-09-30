@@ -167,8 +167,9 @@ a{
   padding-bottom: 116px;
 }
 .partners-item-logo{
-  mix-blend-mode:multiply;
-  filter:brightness(90%)
+  mix-blend-mode:luminosity;
+  filter: brightness(25%);
+
 }
 .discover-details{
   color: #fff;
@@ -191,4 +192,158 @@ a{
   border-radius: 10px;
   text-align: center;
   margin: 0 auto;
+}
+
+
+/*functionality  */
+.functionality{
+  background-color: #101932;
+  padding-bottom: 209px;
+}
+.title{
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.functionality .title{
+  padding-bottom: 50px;
+}
+.functionality-cards{
+  display: flex;
+  gap: 68px;
+  color: #fff;
+}
+.functionality-item{
+  max-width: 496px;
+  background-color: #384D70;
+  padding: 30px 40px 40px;
+  border-radius: 20px;
+}
+.item-img{
+  height: 120px;
+  width: 120px;
+  margin-bottom: 30px;
+}
+.card-title{
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.card-text-xs{
+  font-size: 20px;
+  color: rgb(255, 255, 255, 0.3);
+  margin-bottom: 30px;
+}
+.card-text, 
+.card-text-first{
+  font-size: 25px;
+}
+.card-text-first{
+  margin-bottom: 30px;
+}
+
+
+/* game */
+.game{
+  background-color: #101932;
+  padding-bottom: 175px;
+}
+.game .title{
+  margin-bottom: 10px;
+}
+.game-text{
+  color: rgb(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.game-plot{
+  display: flex;
+  gap: 40px;
+  background-color: #071022;
+  padding: 36px 50px 60px 50px;
+  margin-bottom: 50px;
+}
+.plot-details-title{
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.plot-details-text{
+  color: rgb(255, 255, 255, 0.6);
+  margin-bottom: 20px;
+}
+.game-details{
+  display: flex;
+  gap: 40px; 
+}
+.game-details-item{
+  display: flex;
+  gap: 30px;
+  color: #fff;
+  border-radius: 30px;
+  padding: 36px 64px 40px 30px;
+}
+.game-details-cash{
+  background-color: #FF9429;
+}
+.game-details-events{
+  background-color: #067CCB;
+}
+.details-item-title{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.details-item-text{
+  font-size: 28px;
+}
+
+/* invest */
+.invest{
+  background: #30298C;
+  background-image: url(img/invest.png);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  padding: 150px 92px 143px;
+}
+.invest-wrapper{
+  display: flex;
+  gap: 188px;
+}
+.invest-learn-title{
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.invest-learn-text{
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: rgb(255, 255, 255, 0.6);
+  margin-bottom: 65px;
+}
+.invest-learn-btn{
+  background-color: #E11D2E;
+  width: 404px;
+  padding: 25px 30px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+.invest-details{
+
+}
+.invest-details-item{
+  display: flex;
+}
+
+.invest-details-item img{
+  
+}
+.invest-star{
+  
 }
