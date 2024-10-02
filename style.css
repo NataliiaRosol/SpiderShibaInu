@@ -356,16 +356,32 @@ a{
 /* roadmap */
 .roadmap{
   background-color: #101932;
+  
+  position: relative;
+}
+.roadmap-wrapper{
   padding-top: 70px;
+  padding-bottom: 130px;
 }
 .roadmap .title{
   margin-bottom: 50px;
 }
 .roadmap-list{
   display: grid;
+  justify-content: center;
   grid-template-columns:repeat(2, 792px);
   gap: 60px 40px;
   counter-reset: number;
+}
+.roadmap::before{
+  content: '';
+  position: absolute;
+  top: 292px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: calc(100% - 293px);
+  background-color: red;
 }
 .roadmap-list-item{
   display: flex;
@@ -373,6 +389,7 @@ a{
   padding: 35px 30px;
   list-style-type: none;
   position: relative;
+  border-radius: 30px;
 }
 .roadmap-list-item::before{
   position: absolute;
@@ -403,7 +420,6 @@ a{
 .roadmap-list-item:nth-child(2){
   grid-row: 2/3;
 }
-
 .roadmap-list-item:nth-child(3){
   grid-row: 3/4;
 }
@@ -412,6 +428,12 @@ a{
 }
 .roadmap-list-item:nth-child(5){
   grid-row: 5/6;
+}
+.roadmap-list-item:nth-child(-n+3){
+  background-color: rgb(56, 77, 112, 0.2);
+}
+.roadmap-list-item:nth-child(n+4){
+  background-color: rgb(255, 255, 255, 0.1);
 }
 .item-details{
 
@@ -427,4 +449,55 @@ a{
   color: #fff;
   margin-left: 206px;
   list-style-type:disc
+}
+
+
+/* tokenomics */
+.tokenomics{
+  background: #101D3F;
+  background-image: url(img/tokenomicsImg.png);
+  background-position: calc(50%) calc(60%);
+  background-repeat: no-repeat;
+}
+.tokenomics .title{
+  padding-top: 70px;
+  padding-bottom: 92px;
+}
+/*  */
+.tokenomics-list{
+  display: grid;
+  grid-template-columns: repeat(2, 444px);
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  /* gap: 25px 877px; */
+  padding: 0 93px 186px;
+  align-items: center;
+  max-width: 1900px;
+  margin: 0 auto;
+}
+/*  */
+
+
+.tokenomics-list-item{
+  /* max-width: 444px; */
+  background-color: rgb(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 25px 50px 20px 30px;
+}
+.item-decor-first{
+  background-color: #4E00FF;
+  display: inline-block;
+  width: 57px;
+  height: 1px;
+}
+.tokenomics-list-item-title{
+  font-size: 27px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.tokenomics-list-item-text{
+  color: rgb(255, 255, 255, 0.4);
+  font-size: 20px;
 }
