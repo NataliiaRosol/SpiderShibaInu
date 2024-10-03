@@ -100,10 +100,12 @@ a{
 }
 .top-contact{
   width: 699px;
-  padding: 14px 35px 30px;
+  padding: 14px 35px 13px 30px;
   font-size: 15px;
   color: rgba(255, 255, 255, 0.2);
   margin-bottom: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
 }
 .top-contact span{
   font-size: 25px;
@@ -356,8 +358,20 @@ a{
 /* roadmap */
 .roadmap{
   background-color: #101932;
-  
   position: relative;
+}
+.decor-circle-red{
+  position: absolute;
+  content: '';
+  width: 6px;
+  padding: 6px;
+  background-color: rgba(255, 0, 0, 1);
+  border-radius: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.decor-circle-red:nth-child(1){
+  top: 292px;
 }
 .roadmap-wrapper{
   padding-top: 70px;
@@ -379,9 +393,20 @@ a{
   top: 292px;
   left: 50%;
   transform: translateX(-50%);
-  width: 1px;
-  height: calc(100% - 293px);
-  background-color: red;
+  width: 2px;
+  /* height: calc(100% - 293px); */
+  height: 309px;
+  background-color: rgba(225, 29, 46, 1);
+}
+.roadmap::after{
+  content: '';
+  position: absolute;
+  top: 601px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: calc(100% - 601px);
+  background-color: rgba(56, 77, 112, 1);
 }
 .roadmap-list-item{
   display: flex;
@@ -390,6 +415,40 @@ a{
   list-style-type: none;
   position: relative;
   border-radius: 30px;
+}
+.roadmap-list-item::after{
+  position: absolute;
+  content: '';
+  width: 6px;
+  padding: 6px;
+  border-radius: 100%;
+  z-index: 5;
+}
+.roadmap-list-item:nth-child(1):after{
+  background-color: rgba(255, 0, 0, 1);
+  right: -26px;
+  top: 102px;
+}
+.roadmap-list-item:nth-child(2):after{
+  background-color: rgba(255, 0, 0, 1);
+  left: -26px;
+  top: 140px;
+  
+}
+.roadmap-list-item:nth-child(3):after{
+  background-color: rgba(255, 0, 0, 1);
+  right: -26px;
+  top: 160px;
+}
+.roadmap-list-item:nth-child(4):after{
+  background-color: rgba(255, 255, 255, 1);
+  left: -26px;
+  top: 140px;
+}
+.roadmap-list-item:nth-child(5):after{
+  background-color: rgba(255, 255, 255, 1);
+  right: -26px;
+  top: 160px;
 }
 .roadmap-list-item::before{
   position: absolute;
@@ -456,7 +515,7 @@ a{
 .tokenomics{
   background: #101D3F;
   background-image: url(img/tokenomicsImg.png);
-  background-position: calc(50%) calc(60%);
+  background-position: center;
   background-repeat: no-repeat;
 }
 .tokenomics .title{
@@ -469,7 +528,7 @@ a{
   grid-template-columns: repeat(2, 444px);
   justify-content: space-between;
   /* flex-wrap: wrap; */
-  /* gap: 25px 877px; */
+  gap: 25px 0;
   padding: 0 93px 186px;
   align-items: center;
   max-width: 1900px;
@@ -484,12 +543,6 @@ a{
   border-radius: 15px;
   padding: 25px 50px 20px 30px;
 }
-.item-decor-first{
-  background-color: #4E00FF;
-  display: inline-block;
-  width: 57px;
-  height: 1px;
-}
 .tokenomics-list-item-title{
   font-size: 27px;
   font-weight: 600;
@@ -499,5 +552,114 @@ a{
 }
 .tokenomics-list-item-text{
   color: rgb(255, 255, 255, 0.4);
+  font-size: 20px;
+}
+.percantage-info{
+  display: inline-block;
+  height: 3px;
+}
+.first-item{
+  background-color: #4E00FF;
+  width: 57px;
+}
+.second-item{
+  background-color: #133D81;
+  width: 30px;
+}
+.third-item-orange{
+  background-color: #FF850B;
+  width: 15px;
+}
+.third-item-violet{
+  background-color: #663090;
+  width: 18px;
+}
+.fourth-item{
+  background-color: #FF0000;
+  width: 45px;
+}
+.fifth-item{
+  background-color: #1DBEE1;
+  width: 90px;
+}
+.sixth-item{
+  background-color: #0096F2;
+  width: 45px;
+}
+
+
+
+/* community */
+.community{
+  background: #162758;
+  padding-bottom: 107px;
+}
+.community .title{
+  padding-top: 66px;
+  padding-bottom: 20px;
+  max-width: 782px;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+.community-inner{
+  background-image: url(img/community.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.social-links{
+  padding-top: 90px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+.community-bg{
+  padding-bottom: 50px;
+}
+.community-bg img{
+  display: block;
+  margin: 0 auto;
+}
+.community-contact{
+  
+}
+.community-contact-info{
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  max-width: 699px;
+  padding: 23px 56px 22px;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 15px;
+  font-weight: 500;
+  
+}
+.community-contact-info span{
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 27px;
+  display: inline-block;
+  padding-top: 5px;
+}
+
+
+
+/* footer */
+.footer{
+  background-color: rgba(13, 20, 40, 1);
+  text-align: center;
+}
+.footer-inner{
+  padding:40px 0;
+}
+.footer-copyrigth{
+  padding: 0 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
   font-size: 20px;
 }
