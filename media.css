@@ -1,0 +1,574 @@
+@media (max-width: 1750px) {
+  .top-btn-join {
+    width: 255px;
+    font-size: 1rem;
+  }
+  .top-inner {
+    gap: 0 150px;
+  }
+  .header-inner {
+    gap: 0 30px;
+  }
+  .menu-item-btn {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1620px){
+  .invest-wrapper{
+    gap: 50px;
+  }
+  .invest-learn-btn{
+    font-size: 20px;
+  }
+  .invest{
+    background-position:left;
+  }
+}
+
+@media (max-width: 1590px) {
+  .menu-item-btn {
+    margin-left: 0;
+  }
+  .menu-list {
+    /* gap: 0 20px; */
+  }
+  .logo img {
+    width: 170px;
+  }
+  .roadmap-list-item {
+    padding: 25px 20px;
+  }
+}
+@media (max-width: 1435px) {
+  .top-inner {
+    justify-content: center;
+    gap: 0;
+  }
+  .header {
+    margin-bottom: 50px;
+  }
+  .top-title {
+    font-size: 50px;
+    max-width: 500px;
+  }
+  .top-details-text {
+    max-width: 400px;
+    font-size: 1.3rem;
+  }
+  .logo img {
+    width: 200px;
+  }
+  .menu-list {
+    display: none;
+  }
+
+  .top-btn-join {
+    font-size: 1.1rem;
+    width: 230px;
+  }
+  .top-btn-more {
+    width: 330px;
+  }
+  .top-contact {
+    margin-bottom: 69px;
+  }
+  .top-img img {
+    max-width: 500px;
+  }
+  .discover-details-text {
+    max-width: 452px;
+    font-size: 30px;
+  }
+  .discover-details-btn {
+    width: 200px;
+    font-size: 18px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .functionality {
+    padding-bottom: 109px;
+  }
+  .functionality-item {
+    max-width: 350px;
+  }
+  .item-img {
+    height: 80px;
+    width: 80px;
+    /* margin-bottom: 30px; */
+  }
+  .card-title {
+    font-size: 25px;
+  }
+  .card-text-xs {
+    font-size: 18px;
+  }
+  .card-text,
+  .card-text-first {
+    font-size: 20px;
+  }
+  /* .roadmap-list{
+    grid-template-columns: repeat(2, 1fr);
+  } */
+
+  .roadmap-list-item::before {
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+  }
+  .item-point {
+    margin-left: 160px;
+  }
+  .roadmap::after {
+    top: 590px;
+  }
+  .roadmap::before {
+    top: 280px;
+  }
+  .list-item-title {
+    font-size: 25px;
+  }
+  .item-point {
+    font-size: 20px;
+  }
+  .team-slide {
+    gap: 0 30px;
+  }
+  .community .title {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .social-links {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .social-link-item img {
+    width: 70px;
+  }
+  .game {
+    padding-bottom: 100px;
+  }
+  .game-plot img {
+    max-width: 500px;
+  }
+  .game-details-item img {
+    max-width: 100px;
+    height: 100px;
+  }
+  .invest {
+    padding: 100px 70px;
+  }
+  .invest-wrapper {
+    gap: 140px;
+  }
+  .invest-details-item img {
+    width: 70px;
+  }
+  .details-item-text {
+    font-size: 20px;
+  }
+  .invest-learn-title {
+    font-size: 40px;
+  }
+  .invest-learn-btn {
+    padding: 15px 20px;
+  }
+  .tokenomics .title {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .tokenomics-list {
+    padding: 0 40px 100px;
+  }
+  .community {
+    padding-bottom: 50px;
+  }
+  .community-contact-info {
+    padding: 23px 40px 22px;
+    max-width: 600px;
+  }
+  .community-contact-info span {
+    font-size: 24px;
+  }
+  .team {
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .top-img img {
+    max-width: 400px;
+  }
+  .top-contact {
+    width: 600px;
+  }
+  .functionality-cards {
+    flex-wrap: wrap;
+  }
+  .functionality-item {
+    padding: 20px 30px 30px;
+  }
+  .invest-learn-text {
+    margin-bottom: 20px;
+  }
+  .invest-learn-btn {
+    display: inline-block;
+    max-width: 200px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .tokenomics-list {
+    grid-template-columns: repeat(2, 300px);
+  }
+  .tokenomics-list-item {
+    padding: 15px 10px 10px;
+  }
+  .tokenomics-list-item-title {
+    font-size: 20px;
+  }
+  .tokenomics-list-item-text {
+    font-size: 15px;
+  }
+  .game-plot {
+    align-items: center;
+  }
+  .game-plot img {
+    max-width: 350px;
+    max-height: 250px;
+  }
+}
+@media (max-width: 1060px) {
+  .top-img img {
+    margin-top: 90px;
+    max-width: 350px;
+  }
+}
+@media (max-width: 990px) {
+  .header {
+    margin-bottom: 20px;
+  }
+  .top-details-text {
+    max-width: 400px;
+    font-size: 20px;
+  }
+  .top-title {
+    font-size: 40px;
+    max-width: 300px;
+  }
+  .top-links {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .top-contact {
+    width: 570px;
+    padding: 14px 15px 15px;
+    margin-bottom: 40px;
+  }
+  .partners-list {
+    flex-wrap: wrap;
+    gap: 10px 10px;
+  }
+  .faq {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 820px) {
+  .top-inner {
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .top-title {
+    text-align: center;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+  /* .top-title-helptext, */
+  .top-details-text {
+    margin: 20px auto 15px;
+  }
+  .top-title-helptext {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  .top-wrapper-img {
+    display: block;
+    text-align: center;
+    margin: 40px;
+  }
+  .top-wrapper-img img {
+    max-width: 300px;
+    /* margin: 0 auto; */
+  }
+  .top-img {
+    display: none;
+  }
+  .top-links {
+    flex-direction: row;
+  }
+  .top-btn-more {
+    padding: 15px;
+    max-width: 270px;
+    line-height: 45px;
+  }
+  .top-contact span {
+    font-size: 20px;
+  }
+  .top-contact {
+    width: 500px;
+  }
+  .partners-list {
+    padding-bottom: 60px;
+  }
+  .discover-wrapper {
+    padding-bottom: 200px;
+  }
+  .functionality {
+    padding-bottom: 70px;
+  }
+  .game-plot {
+    flex-direction: column;
+    /* width: 100%; */
+  }
+  .game-plot img {
+    max-width: 100%;
+  }
+  .game-details {
+    flex-direction: column;
+  }
+  .invest {
+    background-position: center;
+  }
+  .invest-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .invest-learn-btn {
+    display: block;
+    margin: 0 auto;
+  }
+  .roadmap-wrapper {
+    padding-bottom: 80px;
+  }
+  .roadmap-list-item {
+    padding: 25px 10px;
+  }
+  .details-item-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .roadmap::before {
+    top: 275px;
+    height: 270px;
+  }
+  .roadmap::after {
+    top: 560px;
+    height: calc(100% - 560px);
+  }
+  .roadmap-list-item::before {
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+  }
+  .list-item-title {
+    /* margin-left: 0; */
+    padding-left: 100px;
+  }
+  .item-point {
+    margin-left: 100px;
+  }
+  .social-link-item img {
+    width: 50px;
+  }
+  .tokenomics .title {
+    padding-top: 40px;
+    padding-bottom: 150px;
+  }
+  .list-item-title {
+    margin-bottom: 10px;
+  }
+  /* .tokenomics-list{
+    margin-top: 20px;
+  } */
+}
+@media (max-width: 500px) {
+  .header {
+    margin-bottom: 50px;
+  }
+  .top-title {
+    text-align: left;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .top-title-helptext {
+    font-size: 15px;
+    display: inline;
+  }
+  .top-details-text {
+    font-size: 22px;
+    margin: 40px 0 0;
+  }
+  .top-wrapper-img {
+    margin-top: 30px;
+  }
+
+  .top-links {
+    flex-direction: column;
+  }
+  .top-contact {
+    width: 400px;
+  }
+  .top-contact span {
+    font-size: 14px;
+  }
+
+  .roadmap-list {
+    /* grid-template-columns: repeat(1, 1fr); */
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .roadmap::after {
+    left: 0;
+  }
+  .roadmap::before {
+    left: 0;
+    height: 240px;
+  }
+
+  .roadmap-list-item:nth-child(odd):after {
+    left: -25px;
+  }
+  .roadmap-list-item:nth-child(1):after {
+    top: 80px;
+  }
+  .roadmap-list-item:nth-child(2):after {
+    top: 130px;
+  }
+  .roadmap-list-item:nth-child(3):after {
+    top: 130px;
+  }
+  .roadmap-list-item:nth-child(4):after {
+    top: 110px;
+  }
+  .roadmap-list-item:nth-child(5):after {
+    top: 130px;
+  }
+  .tokenomics {
+    background-image: none;
+  }
+  .tokenomics-list {
+    grid-template-columns: repeat(1, 430px);
+  }
+  .tokenomics .title {
+    padding-bottom: 50px;
+  }
+
+  .social-links {
+    gap: 20px;
+  }
+  .community-contact-info {
+    font-size: 15px;
+  }
+  .community-contact-info span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px){
+  .top-inner{
+    align-items:stretch;
+  }
+  .top-title{
+    font-size: 50px;
+    max-width: 330px;
+  }
+  .top-links{
+    align-items: center;
+  }
+  .top-btn-join{
+    width: 282px;
+  }
+  .top-btn-more{
+    min-width: 306px;
+  }
+  .tokenomics-list{
+    justify-content: center;
+    grid-template-columns: repeat(1, 350px);
+  }
+  .top-details-text{
+    max-width: 330px;
+  }
+
+  .community-contact-info{
+    padding: 23px 15px 22px;
+    border-radius: 20px;
+  }
+  .social-links{
+    gap: 10px;
+  }
+  .game-details-item{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .invest{
+    padding: 50px 20px;
+  }
+  .invest-learn-title{
+    text-align: center;
+  }
+  .invest-details-item{
+    flex-direction: column;
+  }
+
+  .top-wrapper-img img{
+    max-width: 200px;
+  }
+  .top-title{
+    line-height: 1;
+    margin: 0;
+  }
+  .container{
+    padding: 0 15px;
+  }
+  .top-title-helptext {
+    /* display: block; */
+    max-width: 330px;
+  }
+
+  .top-contact {
+    max-width: 329px;
+    margin: 0 auto 35px;
+  }
+  .accordeon-item-question{
+    padding: 17px 15px 18px;
+  }
+  .accordeon-item-title{
+    padding-right: 15px;
+  }
+
+
+
+  .partners-item-logo{
+    width: 94px;
+  }
+  .discover{
+    background-size: contain;
+  }
+  .discover-details-text{
+    padding-bottom: 290px;
+  }
+  .discover-details-btn{
+    width: 260px;
+  }.discover-wrapper {
+    padding-bottom: 120px;
+  }
+}
