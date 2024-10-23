@@ -14,15 +14,15 @@
   }
 }
 
-@media (max-width: 1620px){
-  .invest-wrapper{
+@media (max-width: 1620px) {
+  .invest-wrapper {
     gap: 50px;
   }
-  .invest-learn-btn{
+  .invest-learn-btn {
     font-size: 20px;
   }
-  .invest{
-    background-position:left;
+  .invest {
+    background-position: left;
   }
 }
 
@@ -59,8 +59,69 @@
   .logo img {
     width: 200px;
   }
-  .menu-list {
-    display: none;
+  .menu-icon{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(56, 77, 112, 1);
+    border-radius: 5px;
+    padding: 11px 11px 14px 12px;
+  }
+  .menu-icon span{
+    /* margin: 0 auto;
+    text-align: center; */
+    display: block;
+    height: 2px;
+    width: 17px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-bottom: 6px;
+  }
+  .menu-icon span:last-child{
+    margin-bottom: 0;
+  }
+  .menu-list{
+    transform: translateY(-100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    padding: 17px 15px;
+
+    background-color: rgb(30, 51, 88);
+    transition: ease .7s;
+  }
+
+  .menu-list.open{
+    transform: translateY(0);
+    border-radius: 5px;
+  }
+  .menu-list-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .menu-list-mobile img{
+    max-width: 155px;
+  }
+  .menu-list-mobile p{
+    font-size: 25px;
+  }
+  .menu-list-item{
+    margin-bottom: 30px;
+  }
+  .menu-list-item:nth-last-child(2){
+    margin-bottom: 70px;
+  }
+ 
+  .menu-item-btn{
+    width: 100%;
+  }
+  .menu-item-link{
+    color: rgba(255, 255, 255, 0.8)
   }
 
   .top-btn-join {
@@ -122,10 +183,12 @@
     margin-left: 160px;
   }
   .roadmap::after {
-    top: 590px;
+    top: 560px;
+    height: calc(100% - 560px);
   }
   .roadmap::before {
     top: 280px;
+    height: 275px;
   }
   .list-item-title {
     font-size: 25px;
@@ -192,9 +255,9 @@
   .community-contact-info span {
     font-size: 24px;
   }
-  .team {
+  /* .team {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 1250px) {
@@ -395,9 +458,7 @@
   .list-item-title {
     margin-bottom: 10px;
   }
-  /* .tokenomics-list{
-    margin-top: 20px;
-  } */
+  
 }
 @media (max-width: 500px) {
   .header {
@@ -437,27 +498,32 @@
     row-gap: 30px;
   }
   .roadmap::after {
-    left: 0;
+    top: 510px;
+    left: 16px;
+    height: calc(100% - 510px);
   }
   .roadmap::before {
-    left: 0;
-    height: 240px;
-  }
+    top: 260px;
+    left: 16px;
+    height: 235px;
+}
 
   .roadmap-list-item:nth-child(odd):after {
-    left: -25px;
+    left: -10px;
   }
   .roadmap-list-item:nth-child(1):after {
     top: 80px;
   }
   .roadmap-list-item:nth-child(2):after {
     top: 130px;
+    left: -10px;
   }
   .roadmap-list-item:nth-child(3):after {
     top: 130px;
   }
   .roadmap-list-item:nth-child(4):after {
     top: 110px;
+    left: -10px;
   }
   .roadmap-list-item:nth-child(5):after {
     top: 130px;
@@ -481,62 +547,63 @@
   .community-contact-info span {
     font-size: 14px;
   }
+  .menu-list{
+    max-width: 100%;
+  }
 }
 
-@media (max-width: 480px){
-  .top-inner{
-    align-items:stretch;
+@media (max-width: 480px) {
+  .top-inner {
+    align-items: stretch;
   }
-  .top-title{
+  .top-title {
     font-size: 50px;
     max-width: 330px;
   }
-  .top-links{
+  .top-links {
     align-items: center;
   }
-  .top-btn-join{
+  .top-btn-join {
     width: 282px;
   }
-  .top-btn-more{
+  .top-btn-more {
     min-width: 306px;
   }
-  .tokenomics-list{
+  .tokenomics-list {
     justify-content: center;
     grid-template-columns: repeat(1, 350px);
   }
-  .top-details-text{
+  .top-details-text {
     max-width: 330px;
   }
 
-  .community-contact-info{
+  .community-contact-info {
     padding: 23px 15px 22px;
     border-radius: 20px;
   }
-  .social-links{
-    gap: 10px;
-  }
-  .game-details-item{
+  
+  .game-details-item {
     flex-direction: column;
     gap: 20px;
   }
-  .invest{
+  .invest {
     padding: 50px 20px;
   }
-  .invest-learn-title{
+  .invest-learn-title {
     text-align: center;
   }
-  .invest-details-item{
+  .invest-details-item {
     flex-direction: column;
   }
 
-  .top-wrapper-img img{
+  .top-wrapper-img img {
     max-width: 200px;
   }
-  .top-title{
+  .top-title {
     line-height: 1;
     margin: 0;
   }
-  .container{
+  .container {
     padding: 0 15px;
   }
   .top-title-helptext {
@@ -548,27 +615,148 @@
     max-width: 329px;
     margin: 0 auto 35px;
   }
-  .accordeon-item-question{
+  .accordeon-item-question {
     padding: 17px 15px 18px;
   }
-  .accordeon-item-title{
+  .accordeon-item-title {
     padding-right: 15px;
   }
 
-
-
-  .partners-item-logo{
+  .partners-item-logo {
     width: 94px;
   }
-  .discover{
+  .discover {
     background-size: contain;
   }
-  .discover-details-text{
+  .discover-details-text {
     padding-bottom: 290px;
   }
-  .discover-details-btn{
+  .discover-details-btn {
     width: 260px;
-  }.discover-wrapper {
+  }
+  .discover-wrapper {
     padding-bottom: 120px;
+  }
+  .card-title {
+    font-size: 30px;
+  }
+  .card-text-xs {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .game-text {
+    font-size: 21px;
+  }
+  .game-plot img {
+    max-width: 309px;
+  }
+  .game-plot {
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 9px;
+  }
+  .plot-details-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .game-plot-details {
+    width: 290px;
+  }
+  .game-details-item {
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+  }
+  .details-item-wrapper {
+    text-align: center;
+  }
+  .game-details-item img {
+    max-width: 134px;
+    height: auto;
+  }
+  .details-item-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .details-item-text {
+    font-size: 22px;
+  }
+  .invest-learn-text {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .invest-learn-btn {
+    max-width: 300px;
+  }
+  .roadmap-list-item::before {
+    left: 15px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .roadmap-list-item:nth-child(odd):after {
+    left: -5px;
+  }
+  .roadmap-list-item:nth-child(2):after {
+    top: 130px;
+    left: -5px;
+  }
+  .roadmap::before {
+    top: 260px;
+    left: 16px;
+    height: 235px;
+  }
+  .roadmap::after {
+    top: 510px;
+    left: 16px;
+    height: calc(100% - 510px);
+  }
+  .roadmap-list-item:nth-child(4):after {
+    left: -5px;
+  }
+  .swiper-teammates img{
+    max-width: 280px;
+  }
+  .team{
+    padding-bottom: 70px;
+  
+  }
+  .teammate-name {
+    font-size: 27px;
+    margin-bottom: 10px;
+  }
+  .teammate-position{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .swiper {
+    margin-bottom: 45px;
+  }
+  .swiper-teammates{
+    text-align: center;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 7px);
+  }
+  .tokenomics img{
+    display: block;
+    max-width: 330px;
+    margin: 0 auto 50px;
+  }
+  .tokenomics-list-item-title {
+    font-size: 27px;
+  }
+  .tokenomics-list-item-text{
+    font-size: 18px;
+  }
+  .social-links {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .footer-inner{
+    padding: 0;
+  }
+  .footer-copyrigth{
+    padding: 15px 16px;
   }
 }
